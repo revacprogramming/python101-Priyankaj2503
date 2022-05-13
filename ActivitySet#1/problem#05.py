@@ -1,5 +1,6 @@
 # Functions
 
+
 score = input("Enter Score: ")
 s = float(score)
 if s>1.0:
