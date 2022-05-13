@@ -14,5 +14,5 @@ elif s>=0.7:
     print("C")
 elif s>=0.6:
     print("D")
-else prob:
+else :
     print("F")
