@@ -1,6 +1,4 @@
 # Functions
-
-
 score = input("Enter Score: ")
 s = float(score)
 if s>1.0:
@@ -17,3 +15,4 @@ elif s>=0.6:
     print("D")
 else :
     print("F")
+  #code is reviewed
