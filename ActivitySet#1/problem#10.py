@@ -6,7 +6,6 @@ for line in fh:
     for word in words_split:
         if word not in lst:
             lst.append(word)
-
      
 lst.sort()
 print(lst)
