@@ -1,5 +1,5 @@
 # Functions
-score = input("Enter Score: ")
+score = input("Enter Score:")
 s = float(score)
 if s>1.0:
     print("entered value is greater than the range")
