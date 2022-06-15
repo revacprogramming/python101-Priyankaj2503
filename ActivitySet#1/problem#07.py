@@ -12,7 +12,6 @@ while True:
             smallest = x
     except:
         print("Invalid input")
-        continue
-      
+        continue      
 print("Maximum is", largest)
 print("Minimum is", smallest)
