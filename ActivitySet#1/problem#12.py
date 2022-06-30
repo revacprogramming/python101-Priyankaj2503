@@ -1,6 +1,19 @@
-n = int(input("enter a number :"))
-sum1=0
-while(n>0):
-    sum1=sum1+n
-    n=n-1
-    print("The sum of first n natural numbers is",sum1)
+name = input("Enter file:")
+handle = open(name)
+lst = list()
+for line in handle:
+    if not line.startswith("From:"):continue
+    line = line.split()
+    lst.append(line[1])
+counts = dict()
+for word in lst:
+	counts[word] = counts.get(word,0) + 1
+bigcount = None
+bigword = None
+for word,count in counts.items():
+    if bigcount is None or count > bigcount:
+        bigcount = count
+        bigword = word
+print(bigword , bigcount)
+
+
