@@ -1,20 +1,12 @@
 name = input("Enter file:")
 handle = open(name)
-lst = list()
+d =dict()
 for line in handle:
-    if not line.startswith("From:"):continue
-    line = line.split()
-    lst.append(line[1])
-counts = dict()
-for word in lst:
-	counts[word] = counts.get(word,0) + 1
-bigcount = None
-bigword = None
-for word,count in counts.items():
-    if bigcount is None or count > bigcount:
-        bigcount = count
-        bigword = word
-print(bigword , bigcount)
-
-
-
+    if not line.startswith("from"):
+        continue        
+lst = list()
+for value,count in d.items():
+    lst.append(values,count)
+lst.sort()
+for value,count in lst:
+    print(value,count)
