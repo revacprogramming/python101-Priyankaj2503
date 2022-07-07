@@ -25,7 +25,6 @@ for tag in tags:
       num=int(num)
       count+=1
       sum+=num
-
 print("Count:",count)
 print(len(num_list))
 print("Sum:",sum)
