@@ -1,7 +1,6 @@
 import urllib.request as ur
 import json
 
-
 json_url = input("Enter location: ")
 print("Retrieving ", json_url)
 data = ur.urlopen(json_url).read().decode('utf-8')
