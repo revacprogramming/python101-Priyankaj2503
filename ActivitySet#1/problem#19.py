@@ -19,3 +19,4 @@ for i in range(7):
     all_links.clear() 
     for i in soup.find_all('a'):
         all_links.append(i.get('href'))
+      
